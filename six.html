@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Adjust thumbnail size */
+    .thumbnail img {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- Thumbnails -->
+      <div class="col-md-3 mb-4">
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
+          <img src="images/img-1.jpg" class="img-fluid thumbnail" alt="Image 1">
+        </a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
+          <img src="images/img-2.jpg" class="img-fluid thumbnail" alt="Image 2">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <a href="#" data-toggle="modal" data-target="#exampleModal">
+        <img src="images/img-3.jpg" class="img-fluid thumbnail" alt="Image 3">
+      </a>
+    </div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-4.jpg" class="img-fluid thumbnail" alt="Image 4">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-5.jpg" class="img-fluid thumbnail" alt="Image 5">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-6.jpg" class="img-fluid thumbnail" alt="Image 6">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-7.jpg" class="img-fluid thumbnail" alt="Image 7">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-8.jpg" class="img-fluid thumbnail" alt="Image 8">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-9.jpg" class="img-fluid thumbnail" alt="Image 9">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-10.jpg" class="img-fluid thumbnail" alt="Image 10">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-11.jpg" class="img-fluid thumbnail" alt="Image 11">
+  </a>
+</div>
+</div>
+<div class="col-md-3 mb-4">
+  <a href="#" data-toggle="modal" data-target="#exampleModal">
+    <img src="images/img-12.jpg" class="img-fluid thumbnail" alt="Image 12">
+  </a>
+</div>
+    
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" class="img-fluid" alt="Modal Image" id="modalImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+   
+    $('.thumbnail').click(function() {
+      var src = $(this).attr('src');
+      $('#modalImage').attr('src', src);
+    });
+  </script>
+</body>
+</html>
